@@ -159,6 +159,7 @@ em {
 
 .navbar {
     background-image: linear-gradient(#27374D, #9DB2BF, #27374D);
+    box-shadow: 0px 0px 50px black;
     left: 0;
     position: fixed;
     top: 0;
@@ -360,18 +361,18 @@ em {
   }
 
 .image-single {
-    box-shadow: 5px 5px 12px black;
+    box-shadow: 0px 0px 15px black;
     margin-bottom: 1%;
     width: 40%;
 }  
 
 .image-single-30 {
-    box-shadow: 5px 5px 12px black;
+    box-shadow: 0px 0px 15px black;
     width: 30%;
 }
 
 .image-single-45 {
-    box-shadow: 5px 5px 12px black;
+    box-shadow: 0px 0px 15px black;
     margin: auto;
     margin-bottom: 2%;
     width: 45%;
@@ -382,25 +383,25 @@ em {
 }
 
 .image-single-50 {
-    box-shadow: 5px 5px 12px black;
+    box-shadow: 0px 0px 15px black;
     margin-left: 25%;
     width: 50%;
 }
 
 .image-single-100 {
-    box-shadow: 5px 5px 12px black;
+    box-shadow: 0px 0px 15px black;
     width: 100%;
 }
 
 .image-double {
-    box-shadow: 5px 5px 12px black;
+    box-shadow: 0px 0px 15px black;
     margin-bottom: 1%;
     margin-right: 5%;
     width: 40%;
 }
 
 .image-single-portrait {
-    box-shadow: 5px 5px 12px black;
+    box-shadow: 0px 0px 15px black;
     float: right;
     margin-bottom: 1%;
     margin-left: 2%;
