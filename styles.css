@@ -203,7 +203,7 @@ em {
 }
 
 .div-caosa-portrait {
-    margin-bottom: 15%;
+    margin-bottom: 5%;
     margin-left: 2%;
     margin-right: 2%;
     margin-top: 2%;
@@ -394,17 +394,18 @@ em {
 
 .image-double {
     box-shadow: 5px 5px 12px black;
-    margin: auto;
     margin-bottom: 1%;
+    margin-right: 5%;
     width: 40%;
 }
 
 .image-single-portrait {
     box-shadow: 5px 5px 12px black;
-    float: left;
+    float: right;
     margin-bottom: 1%;
+    margin-left: 2%;
     margin-right: 2%;
-    width: 20%;
+    width: 15%;
 }
 
 .photo-committee {
@@ -469,6 +470,75 @@ em {
 .overflow-hidden {
     overflow: hidden;
   }
+
+
+
+
+
+
+
+
+
+@media (min-width: 1081px) and (max-width: 1440px) {
+
+    #map {
+        height: 500px;
+        opacity: 0;
+        transition: opacity 5s ease-in-out;
+    }
+
+    .h2-caption-card {
+        font-size: 1.1rem;
+    }
+
+    .index-link-text {
+        font-size: 1.1rem;
+    }
+
+    .link-pdf {
+        color: white;
+        font-size: 0.8rem;
+        text-decoration: none;
+    }
+
+    .card-img-top-gunners-regional {
+        height: 240px;
+    }
+    
+    .card-img-top-index {
+        height: 240px;
+    }
+    
+    .card-img-top-committee {
+        height: 320px;
+    }
+
+    .card-body-committee {
+        height: 70px;
+    }
+
+    .card-body-location {
+        height: 265px;
+    }
+
+    .card-body-gunners-regional {
+        height: 70px;
+    }
+
+    .card-title {
+        font-size: 1.5rem;
+    }
+    
+    .card-text {
+        font-size: 1rem;
+    }
+
+    .image-double {
+        margin-bottom: 1%;
+        margin-right: 5%;
+        width: 40%;
+    }
+}
 
 
 
@@ -662,6 +732,7 @@ em {
     }
     
     .image-single-portrait {
+        float: left;
         margin-right: 4%;
         width: 40%;
     }

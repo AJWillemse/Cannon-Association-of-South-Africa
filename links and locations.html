@@ -15,15 +15,16 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="favicon.ico">
 
+  <!-- jQuery Script -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
   <!-- Google Fonts -->
   <script src="https://kit.fontawesome.com/8ce27291f6.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Ephesis&family=Fredericka+the+Great&family=Merriweather&family=Montserrat:wght@100;400;900&family=Sacramento&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
-
-  <!-- jQuery Script -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
 
 </head>
 
@@ -211,13 +212,11 @@
 </div>
 
 <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-<script>
-    
-    $(document).ready(function() {
-  var map = L.map('map').setView([-28.4793, 24.6727], 6);
+
+<script>var map = L.map('map').setView([-28.4793, 24.6727], 6);
 
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
+      attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
   }).addTo(map);
 
   map.dragging.enable();
@@ -229,87 +228,86 @@
 
   if (map.tap) map.tap.disable();
 
-    
-    var markers = [
-    {
-      coordinates: [-33.9253, 18.4257], // Castle of Good Hope
-      content: "<h2>Castle of Good Hope</h2><p>Darling St & Buitenkant St<br>Foreshore<br>Cape Town<br>8001</p>"
-    },
-    {
-      coordinates: [-29.5978, 30.3784], // KwaZulu-Natal Museum
-      content: '<h2>KwaZulu-Natal Museum</h2><p>Darling St & Buitenkant St<br>Foreshore<br>Cape Town<br>8001</p>'
-    },
-    {
-     coordinates: [-33.9822, 25.6539], // Port Elizabeth Museum
-     content: '<h2>Port Elizabeth Museum</h2><p>Natural and cultural history museum in Port Elizabeth.</p>'
-    },
-    {
-      coordinates: [-33.0182, 27.9116], // East London Museum
-      content: '<h2>East London Museum</h2><p>Natural and cultural history museum in East London.</p>'
-    },
-    {
-      coordinates: [-34.0453, 18.3569], // Hout Bay
-      content: '<h2>Hout Bay</h2><p>Coastal area near Cape Town with historical significance.</p>'
-    },
-    {
-      coordinates: [-25.8584, 25.6486], // Mahikeng Museum
-      content: '<h2>Mahikeng Museum</h2><p>Historical museum in Mahikeng (Mafikeng).</p>'
-    },
-    {
-      coordinates: [-29.1110, 26.2169], // The Old Fort, Bloemfontein
-      content: '<h2>The Old Fort</h2><p>Historical site in Bloemfontein.</p>'
-    },
-    {
-      coordinates: [-33.9172, 18.4209], // Chavonnes Battery Museum
-      content: '<h2>Chavonnes Battery Museum</h2><p>Historical museum in Cape Town.</p>'
-    },
-    {
-      coordinates: [-33.9258, 18.4154], // Noon Gun
-      content: '<h2>Noon Gun</h2><p>Historic landmark in Cape Town.</p>'
-    },
-    {
-      coordinates: [-34.1924, 18.4305], // South African Naval Museum
-      content: '<h2>South African Naval Museum</h2><p>Naval history museum in Simons Town.</p>'
-    },
-    {
-      coordinates: [-34.5302, 20.0346], // Shipwreck Museum, Bredasdorp
-      content: '<h2>Shipwreck Museum</h2><p>Maritime museum in Bredasdorp.</p>'
-    },
-    {
-      coordinates: [-29.8619, 31.0306], // Port Natal Maritime Museum
-      content: '<h2>Port Natal Maritime Museum</h2><p>Maritime museum in Durban.</p>'
-    },
-    {
-      coordinates: [-32.7761, 26.6384], // Fort Beaufort Historical Museum
-      content: '<h2>Fort Beaufort Historical Museum</h2><p>Historical museum in Fort Beaufort.</p>'
-    },
-    {
-      coordinates: [-33.9356, 18.8622], // V.O.C. Kruithuis, Stellenbosch
-      content: '<h2>V.O.C. Kruithuis</h2><p>Historic powder magazine in Stellenbosch.</p>'
-    },
-    {
-      coordinates: [-33.9039, 18.4047], // Fort Wynyard
-      content: '<h2>Fort Wynyard</h2><p>Historic fortification in Cape Town.</p>'
-    },
-    {
-      coordinates: [-33.8271, 18.6343], // Nitida Cannon Station, Durbanville
-      content: '<h2>Nitida Cannon Station</h2><p>Historic cannon station in Durbanville.</p>'
-    },
-    ];
+  var markers = [
 
-    var customIcon = L.icon({
+  {
+  coordinates: [-33.9253, 18.4257], // Castle of Good Hope
+  content: "<h2>Castle of Good Hope</h2><p>Darling St & Buitenkant St<br>Foreshore<br>Cape Town<br>8001</p>"
+},
+{
+  coordinates: [-29.5978, 30.3784], // KwaZulu-Natal Museum
+  content: '<h2>KwaZulu-Natal Museum</h2><p>Darling St & Buitenkant St<br>Foreshore<br>Cape Town<br>8001</p>'
+},
+{
+ coordinates: [-33.9822, 25.6539], // Port Elizabeth Museum
+ content: '<h2>Port Elizabeth Museum</h2><p>Natural and cultural history museum in Port Elizabeth.</p>'
+},
+{
+  coordinates: [-33.0182, 27.9116], // East London Museum
+  content: '<h2>East London Museum</h2><p>Natural and cultural history museum in East London.</p>'
+},
+{
+  coordinates: [-34.0453, 18.3569], // Hout Bay
+  content: '<h2>Hout Bay</h2><p>Coastal area near Cape Town with historical significance.</p>'
+},
+{
+  coordinates: [-25.8584, 25.6486], // Mahikeng Museum
+  content: '<h2>Mahikeng Museum</h2><p>Historical museum in Mahikeng (Mafikeng).</p>'
+},
+{
+  coordinates: [-29.1110, 26.2169], // The Old Fort, Bloemfontein
+  content: '<h2>The Old Fort</h2><p>Historical site in Bloemfontein.</p>'
+},
+{
+  coordinates: [-33.9172, 18.4209], // Chavonnes Battery Museum
+  content: '<h2>Chavonnes Battery Museum</h2><p>Historical museum in Cape Town.</p>'
+},
+{
+  coordinates: [-33.9258, 18.4154], // Noon Gun
+  content: '<h2>Noon Gun</h2><p>Historic landmark in Cape Town.</p>'
+},
+{
+  coordinates: [-34.1924, 18.4305], // South African Naval Museum
+  content: '<h2>South African Naval Museum</h2><p>Naval history museum in Simons Town.</p>'
+},
+{
+  coordinates: [-34.5302, 20.0346], // Shipwreck Museum, Bredasdorp
+  content: '<h2>Shipwreck Museum</h2><p>Maritime museum in Bredasdorp.</p>'
+},
+{
+  coordinates: [-29.8619, 31.0306], // Port Natal Maritime Museum
+  content: '<h2>Port Natal Maritime Museum</h2><p>Maritime museum in Durban.</p>'
+},
+{
+  coordinates: [-32.7761, 26.6384], // Fort Beaufort Historical Museum
+  content: '<h2>Fort Beaufort Historical Museum</h2><p>Historical museum in Fort Beaufort.</p>'
+},
+{
+  coordinates: [-33.9356, 18.8622], // V.O.C. Kruithuis, Stellenbosch
+  content: '<h2>V.O.C. Kruithuis</h2><p>Historic powder magazine in Stellenbosch.</p>'
+},
+{
+  coordinates: [-33.9039, 18.4047], // Fort Wynyard
+  content: '<h2>Fort Wynyard</h2><p>Historic fortification in Cape Town.</p>'
+},
+{
+  coordinates: [-33.8271, 18.6343], // Nitida Cannon Station, Durbanville
+  content: '<h2>Nitida Cannon Station</h2><p>Historic cannon station in Durbanville.</p>'
+},
+
+  ];
+
+  var customIcon = L.icon({
     iconUrl: 'images/map marker.png',
-    iconSize: [48, 48],
-    iconAnchor: [32, 48]
-  });
-
-  $.each(markers, function(index, marker) {
-    L.marker(marker.coordinates, { icon: customIcon })
-      .addTo(map)
-      .bindPopup(marker.content);
-  });
+    iconSize: [64, 64],
+    iconAnchor: [16, 32],
 });
-</script>
+
+  markers.forEach(function (marker) {
+    L.marker(marker.coordinates, { icon: customIcon })
+        .addTo(map)
+        .bindPopup(marker.content);
+  });</script>
 
 <script src="index.js"></script>
 </body>
