@@ -1,0 +1,676 @@
+body {
+    background-color: #DBDFEA;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*///SCRIPTS/////SCRIPTS/////SCRIPTS/////SCRIPTS/////SCRIPTS///*/
+
+#map {
+    height: 600px;
+    opacity: 0;
+    transition: opacity 5s ease-in-out;
+}
+
+.map {
+    margin-bottom: 5%;
+    z-index: 0;
+}
+
+#cover {
+    opacity: 0;
+    transition: opacity 5s ease-in-out;
+}
+
+#index {
+    opacity: 0;
+    transition: opacity 5s ease-in-out;
+}
+
+#card {
+    opacity: 0;
+    transition: opacity 5s ease-in-out;
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 3s ease-in-out;
+}
+
+/*///FONT/////FONT/////FONT/////FONT/////FONT/////FONT/////FONT///*/
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1%;
+    text-align: center;
+    text-decoration: underline;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1%;
+}
+
+.h2-caption {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 1%;
+    text-align: center;
+}
+
+.h2-caption-card {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+h4 {
+    color: gray;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.h4-left-aligned {
+    color: gray;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1%;
+    text-align: left;
+}
+
+.h4-pdf {
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.link-pdf {
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.index-link-text {
+    color: white;
+    font-size: 1.3rem;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+p {
+    font-size: 1.3rem;
+}
+
+ul {
+    font-size: 1.3rem;
+}
+
+em {
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.footer-text {
+    color: #537188;
+    font-size: 1.2rem;
+}
+
+.footer-text-tm {
+    color: #537188;
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+
+.link-footer {
+    color: #537188;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+/*///NAV BAR/////NAV BAR/////NAV BAR/////NAV BAR/////NAV BAR/////NAV BAR///*/
+
+.fixed-navbar {
+    height: 125px;
+}
+
+.navbar-logo {
+    width: 40%;
+    margin-left: 12%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.navbar-brand {
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+
+.navbar {
+    background-image: linear-gradient(#27374D, #9DB2BF, #27374D);
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.navbar-nav {
+    margin-right: 2%;
+}
+
+.nav-link {
+    color: white;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.navbar-toggler {
+    color: white;
+    margin-right: 2%;
+}
+
+/*///DIV, IMAGES & STRUCTURE/////DIV, IMAGES & STRUCTURE/////DIV, IMAGES & STRUCTURE///*/
+
+.mobile-cover-image {
+    box-shadow: 0px 0px 15px black;
+    display: none;
+}
+
+.cover-image {
+    box-shadow: 0px 0px 15px black;
+    display: block;
+    margin-bottom: 5%;
+    width: 100%;
+}
+
+.div-caosa {
+    margin-bottom: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
+}
+
+.div-caosa-portrait {
+    margin-bottom: 15%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
+}
+
+.container-card {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-images {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.gallery-images {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-bottom: 8%;
+}
+
+.card {
+    box-shadow: 0px 0px 20px black;
+    margin: auto;
+    margin-bottom: 5%;
+    width: 22%;
+}
+
+.card-newsletter {
+    box-shadow: 0px 0px 20px black;
+    margin: auto;
+    margin-bottom: 5%;
+    width: 15%;
+}
+
+.card-committee {
+    box-shadow: 0px 0px 20px black;
+    margin: auto;
+    margin-bottom: 5%;
+    margin-top: 2%;
+    width: 19%;
+}
+
+.card-gunners-regional {
+    box-shadow: 0px 0px 20px black;
+    margin: auto;
+    margin-bottom: 5%;
+    margin-top: 2%;
+    width: 18%;
+}
+
+.card-img-top-gunners-regional {
+    height: 300px;
+    width: 100%;
+}
+
+.card-img-top-index {
+    height: 300px;
+}
+
+.card-img-top-location {
+    height: 200px;
+}
+
+.card-img-top-committee {
+    height: 490px;
+    width: 100%;
+}
+
+.card-body {
+    background-image: linear-gradient(#27374D, #9DB2BF, #27374D);
+}
+
+.card-body-newsletter {
+    background-image: linear-gradient(#27374D, #9DB2BF, #27374D);
+    height: 350px;
+    text-align: center;
+}
+
+.card-body-location {
+    background-image: linear-gradient(#27374D, #9DB2BF, #27374D);
+    height: 230px;
+    text-align: center;
+}
+
+.card-body-committee {
+    background-image: linear-gradient(#27374D, #9DB2BF, #27374D);
+    height: 80px;
+    padding-top: 1%;
+    text-align: center;
+}
+
+.card-body-gunners-regional {
+    background-image: linear-gradient(#27374D, #9DB2BF, #27374D);
+    height: 80px;
+    padding-top: 1%;
+    text-align: center;
+}
+
+.card-title {
+    color: white;
+    font-size: 2rem;
+    margin-top: 2%;
+    text-align: center;
+}
+
+.card-text {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.card-link {
+    font-weight: bold;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.container-footer {
+    color: #537188;
+    margin: auto;
+    text-align: center;
+}
+
+.btn {
+    background: #9DB2BF;
+    background-image: -webkit-linear-gradient(top, #9DB2BF, #27374D);
+    background-image: -moz-linear-gradient(top, #9DB2BF, #27374D);
+    background-image: -ms-linear-gradient(top, #9DB2BF, #27374D);
+    background-image: -o-linear-gradient(top, #9DB2BF, #27374D);
+    background-image: linear-gradient(to bottom, #9DB2BF, #27374D);
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    font-family: Georgia;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    box-shadow: 3px 3px 12px black;
+    margin-bottom: 2%;
+  }
+  
+  .btn:hover {
+    background: #27374D;
+    background-image: -webkit-linear-gradient(top, #27374D, #9DB2BF);
+    background-image: -moz-linear-gradient(top, #27374D, #9DB2BF);
+    background-image: -ms-linear-gradient(top, #27374D, #9DB2BF);
+    background-image: -o-linear-gradient(top, #27374D, #9DB2BF);
+    background-image: linear-gradient(to bottom, #27374D, #9DB2BF);
+    text-decoration: none;
+  }
+
+.image-single {
+    box-shadow: 5px 5px 12px black;
+    margin-bottom: 1%;
+    width: 40%;
+}  
+
+.image-single-30 {
+    box-shadow: 5px 5px 12px black;
+    width: 30%;
+}
+
+.image-single-45 {
+    box-shadow: 5px 5px 12px black;
+    margin: auto;
+    margin-bottom: 2%;
+    width: 45%;
+}
+
+.image-single-45:hover {
+    box-shadow: 0px 0px 20px #27374D;
+}
+
+.image-single-50 {
+    box-shadow: 5px 5px 12px black;
+    margin-left: 25%;
+    width: 50%;
+}
+
+.image-single-100 {
+    box-shadow: 5px 5px 12px black;
+    width: 100%;
+}
+
+.image-double {
+    box-shadow: 5px 5px 12px black;
+    margin: auto;
+    margin-bottom: 1%;
+    width: 40%;
+}
+
+.image-single-portrait {
+    box-shadow: 5px 5px 12px black;
+    float: left;
+    margin-bottom: 1%;
+    margin-right: 2%;
+    width: 20%;
+}
+
+.photo-committee {
+    float: right;
+    width: 50%;
+}
+
+.image-cannon {
+    float: right;
+    width: 30%;
+}
+
+.footer-logo {
+    margin-bottom: 1%;
+    width: 5%;
+}
+
+.modal-container {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: auto;
+  }
+  
+.modal-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+  }
+  
+  .modal-image {
+    max-width: 100vw;
+    max-height: 100vh;
+  }
+  
+@keyframes modal-fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+.close-button {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #C8C6C6;
+    cursor: pointer;
+  }
+
+.overflow-hidden {
+    overflow: hidden;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-device-width: 1080px) {
+
+    .cover-image {
+        display: none;
+    }
+
+    .image-cannon {
+        display: none;
+    }
+
+    .photo-committee {
+        display: none;
+    }
+    
+    .mobile-cover-image {
+        box-shadow: 0px 0px 15px black;
+        display: block;
+        margin-bottom: 8%;
+        width: 100%;
+    }
+
+    #map {
+        height: 300px;
+    }
+
+    .fixed-navbar {
+        height: 65px;
+    }
+    
+    .navbar {
+        padding-top: 0;
+        padding-bottom: 0;
+    } 
+
+    .navbar-logo {
+        margin-left: 8%;
+        width: 20%;
+    }
+
+    .navbar-toggler {
+        font-size: 1.2rem;
+        margin-right: 8%;
+    }
+
+    .nav-link {
+        font-size: 1.2rem;
+    }
+
+    .div-caosa {
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 5%;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    .h2-caption {
+        font-size: 2rem;
+    }
+    
+    .h2-caption-card {
+        font-size: 1.2rem;
+    }
+
+    .index-link-text {
+        font-size: 1.2rem;
+    }
+    
+    h3 {
+        font-size: 2rem;
+    }
+    
+    h4 {
+        font-size: 1.5rem;
+    }
+    
+    .h4-left-aligned {
+        font-size: 1.3rem;
+    }
+    
+    .h4-pdf {
+        font-size: 2.5rem;
+    }
+    
+    .link-pdf {
+        font-size: 1rem;
+    }
+    
+    p {
+        font-size: 1.3rem;
+    }
+    
+    ul {
+        font-size: 1.3rem;
+    }
+    
+    em {
+        font-style: italic;
+        font-weight: bold;
+        margin-top: 0;
+    }
+    
+    .footer-text {
+        font-size: 1.2rem;
+    }
+    
+    .footer-text-tm {
+        font-size: 1.2rem;
+    }
+    
+    .link-footer {
+        font-size: 1.3rem;
+    }
+
+    .container-footer {
+        margin-top: 8%;
+    }
+
+    .card {
+        margin-bottom: 5%;
+        width: 90%;
+    }
+
+    .card-title {
+        font-size: 1.5rem;
+    }
+
+    .card-body-gunners-regional {
+        height: 100px;
+    }
+
+    .card-newsletter {
+        width: 90%;
+    }
+    
+    .card-committee {
+        width: 90%;
+    }
+    
+    .card-gunners-regional {
+        width: 90%;
+    }
+
+    .image-single {
+        margin-bottom: 3%;
+        width: 100%;
+    }  
+    
+    .image-single-30 {
+        margin-bottom: 3%;
+        width: 100%;
+    }
+    
+    .image-single-45 {
+        margin-bottom: 8%;
+        width: 100%;
+    }
+    
+    .image-single-50 {
+        margin-bottom: 3%;
+        margin-left: 0;
+        width: 100%;
+    }
+    
+    .image-single-100 {
+        margin-bottom: 3%;
+        width: 100%;
+    }
+    
+    .image-double {
+        margin-bottom: 3%;
+        width: 100%;
+    }
+    
+    .image-single-portrait {
+        margin-right: 4%;
+        width: 40%;
+    }
+
+    .footer-logo {
+        width: 15%;
+    }
+
+    .btn {
+        margin-bottom: 5%;
+    }
+}

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cannon Association of South Africa</title>
+
+    <!-- Bootstrap Scripts -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+
+    <!-- jQuery Scripts -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.js"></script>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+ 
+    <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.ico">
+
+    <!-- Google Fonts -->
+  <script src="https://kit.fontawesome.com/8ce27291f6.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ephesis&family=Fredericka+the+Great&family=Merriweather&family=Montserrat:wght@100;400;900&family=Sacramento&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    
+  <div class="fixed-navbar">
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a href="index.html"><img class="navbar-logo" src="images/caosa logo.png" alt="Caosa Logo"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="links and locations.html">Locations</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="forthcoming events.html">Forthcoming</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="gallery.html">Gallery</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="newsletters.html">Newsletters</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="committee.html">Committee</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about us.html">About us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact us.html">Contact us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="membership.html">Membership</a>
+      </li>
+   </ul>
+  </div>
+  </nav>
+  </div>
+
+<div id="map" class="map"></div>
+
+<div id="card" class="container-card">
+
+  <div class="card">
+    <img src="images2/castle of goog hope.jpg" class="card-img-top-location" alt="...">
+    <div class="card-body-location">
+        <h2 class="card-title">Castle of Good Hope</h2>
+      <p class="card-text">Darling St & Buitenkant St<br>Foreshore<br>Cape Town<br>8001<br>+27 21 787 1260<br><a href="https://www.castleofgoodhope.co.za/" class="card-link">www.castleofgoodhope.co.za</a></p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="images2/kwazulu natal museum.jpg" class="card-img-top-location" alt="...">
+    <div class="card-body-location">
+        <h2 class="card-title">KwaZulu-Natal Museum</h2>
+      <p class="card-text">237 Jabu Ndlovu Street<br>Pietermaritzburg<br>South Africa<br>+27 33 3451404<br>+27 33 3450561<br><a href="https://www.nmsa.org.za/" class="card-link">www.nmsa.org.za</a></p>
+    </div>
+   </div>
+
+  <div class="card">
+    <img src="images2/bayworld.jpg" class="card-img-top-location" alt="...">
+    <div class="card-body-location">
+        <h2 class="card-title">Port Elizabeth Museum</h2>
+      <p class="card-text">Beach Road, Humewood<br>Summerstrand<br>Port Elizabeth, 6013<br>+27 41 584 0650<br><a href="https://www.castleofgoodhope.co.za/" class="card-link">www.bayworld.co.za</a></p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="images2/east london museum.png" class="card-img-top-location" alt="...">
+    <div class="card-body-location">
+        <h2 class="card-title">East London Museum</h2>
+      <p class="card-text">319 Oxford St<br>Belgravia,<br>East London, 5201<br>+27 43 743 0686<br><a href="https://www.bayworld.co.za/" class="card-link">www.elmuseum.za.org</a></p>
+    </div>
+  </div>
+</div>
+
+<div class="container-card">
+  <div class="card fade-in">
+    <img src="images2/east and west fort.jpg" class="card-img-top-location" alt="...">
+    <div class="card-body-location">
+        <h2 class="card-title">East & West Forts</h2>
+      <p class="card-text">Hout Bay & Llandudno Heritage<br>PO Box 27091<br>Cape Town<br><a href="mailto:ballyteran@gmail.com" class="card-link">ballyteran@gmail.com</a><br><a href="https://www.houtbayheritage.org.za" class="card-link">www.houtbayheritage.org.za</a></p>
+    </div>
+   </div>
+
+  <div class="card fade-in">
+    <img src="images2/mahikeng municipality.jpg" class="card-img-top-location" alt="...">
+    <div class="card-body-location">
+        <h2 class="card-title">Mahikeng Museum</h2>
+      <p class="card-text">Carrington St, Golf View,<br>Mahikeng, 2745<br>+27 18 388 9000<br>+27 18 389 0111<br><a href="https://www.castleofgoodhope.co.za/" class="card-link">www.mahikeng.gov.za</a></p>
+    </div>
+  </div>
+
+  <div class="card fade-in">
+    <img src="images2/the old fort.jpg" class="card-img-top-location" alt="...">
+    <div class="card-body-location">
+        <h2 class="card-title">The Old Fort</h2>
+      <p class="card-text">116 Oliver Tambo Rd,<br>Oranjesig,<br>Bloemfontein, 9301<br>+27 51 447 5478</p>
+    </div>
+  </div>
+
+  <div class="card fade-in">
+    <img src="images2/chavonnes battery.png" class="card-img-top-location" alt="...">
+    <div class="card-body-location">
+        <h2 class="card-title">Chavonnes Battery Museum</h2>
+      <p class="card-text">Clock Tower Precinct,<br>V A Waterfront,<br>Cape Town, 8001<br>+27 21 416 6230<br><a href="mailto:info@chavonnesbattery.co.za" class="card-link">info@chavonnesbattery.co.za</a><br><a href="https://www.chavonnesbattery.co.za/" class="card-link">www.chavonnesbattery.co.za</a></p>
+    </div>
+  </div>
+
+  <div class="card fade-in">
+    <img src="images2/noon gun2.jpg" class="card-img-top-location" alt="...">
+    <div class="card-body-location">
+        <h2 class="card-title">Noon Gun</h2>
+      <p class="card-text">Military Rd,<br>Schotsche Kloof,<br>Cape Town, 8001</p>
+    </div>
+  </div>
+
+  <div class="card fade-in">
+    <img src="images2/south africa net.png" class="card-img-top-location" alt="...">
+    <div class="card-body-location">
+        <h2 class="card-title">South African Naval Museum</h2>
+      <p class="card-text">St Georges St,<br>Simon's Town,<br>Cape Town, 7995<br>+27 21 787 4686<br><a href="https://www.southafrica.net/" class="card-link">www.southafrica.net</a></p>
+    </div>
+  </div>
+
+  <div class="card fade-in">
+    <img src="images2/shipwreck museum.jpg" class="card-img-top-location" alt="...">
+    <div class="card-body-location">
+        <h2 class="card-title">Shipwreck Museum</h2>
+      <p class="card-text">Independent St,<br>Bredasdorp, 7280<br>+27 28 424 1240</p>
+    </div>
+  </div>
+
+  <div class="card fade-in">
+    <img src="images2/port natal maritime museum.jpg" class="card-img-top-location" alt="...">
+    <div class="card-body-location">
+        <h2 class="card-title">Port Natal Maritime Museum</h2>
+      <p class="card-text">Samora Machel St,<br>Durban Central,<br>Durban, 4001<br>+27 31 322 9598<br><a href="https://www.durban.gov.za/" class="card-link">www.durban.gov.za</a></p>
+    </div>
+  </div>
+
+  <div class="card fade-in">
+    <img src="images2/fort beaufort museum.jpg" class="card-img-top-location" alt="...">
+    <div class="card-body-location">
+        <h2 class="card-title">Fort Beaufort Historical Museum</h2>
+      <p class="card-text">44 Durban St,<br>Fort Beaufort, 5720<br><a href="http://www.raymondmhlaba.gov.za/tourism/fort-beaufort/fort-beaufort-museum" class="card-link">www.raymondmhlaba.gov.za</a></p>
+    </div>
+  </div>
+
+  <div class="card fade-in">
+    <img src="images2/stellenbosch museum.jpg" class="card-img-top-location" alt="...">
+    <div class="card-body-location">
+        <h2 class="card-title">V.O.C. Kruithuis</h2>
+      <p class="card-text">Mark St, Stellenbosch<br>Stellenbosch, 7599<br>+27 21 887 2948<br><a href="mailto:manage@stelmus.co.za" class="card-link">manage@stelmus.co.za</a><br><a href="https://stelmus.co.za/" class="card-link">www.stelmus.co.za</a></p>
+    </div>
+  </div>
+
+  <div class="card fade-in">
+    <img src="images2/fort wynyard.jpg" class="card-img-top-location" alt="...">
+    <div class="card-body-location">
+        <h2 class="card-title">Fort Wynyard</h2>
+      <p class="card-text">40 Somerset St,<br>Grahamstown, 6139<br>+27 46 622 2312</p>
+    </div>
+  </div>
+
+  <div class="card fade-in">
+    <img src="images2/nitida cannon station.jpg" class="card-img-top-location" alt="...">
+    <div class="card-body-location">
+        <h2 class="card-title">Nitida Cannon Station</h2>
+      <p class="card-text">Tyger Valley Rd,<br>Durbanville<br><a href="mailto:info@nitidacannonstation.co.za" class="card-link">info@nitidacannonstation.co.za</a><br><a href="https://www.nitidacannonstation.co.za" class="card-link">www.nitidacannonstation.co.za</a></p>
+    </div>
+  </div>
+
+</div>  
+  
+<div class="container-footer">
+  <img class="footer-logo" src="images/footer logo.png" alt="Caosa Logo">
+  <p class="footer-text">© 2020 Cannon Association of South Africa.<br>All Rights Reserved.<br>Cannon Association of South Africa<br>(SAPS Registered 28/1/3/8/2/1 23704)</p>
+  <p class="footer-text-tm">Developed by</p>
+  <a class="link-footer" href="https://ajwillemse.github.io/Prestige-Webworx/">©Prestige Webworx</a>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+<script>
+    
+    $(document).ready(function() {
+  var map = L.map('map').setView([-28.4793, 24.6727], 6);
+
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
+  }).addTo(map);
+
+  map.dragging.enable();
+  map.touchZoom.enable();
+  map.doubleClickZoom.enable();
+  map.scrollWheelZoom.enable();
+  map.boxZoom.enable();
+  map.keyboard.enable();
+
+  if (map.tap) map.tap.disable();
+
+    
+    var markers = [
+    {
+      coordinates: [-33.9253, 18.4257], // Castle of Good Hope
+      content: "<h2>Castle of Good Hope</h2><p>Darling St & Buitenkant St<br>Foreshore<br>Cape Town<br>8001</p>"
+    },
+    {
+      coordinates: [-29.5978, 30.3784], // KwaZulu-Natal Museum
+      content: '<h2>KwaZulu-Natal Museum</h2><p>Darling St & Buitenkant St<br>Foreshore<br>Cape Town<br>8001</p>'
+    },
+    {
+     coordinates: [-33.9822, 25.6539], // Port Elizabeth Museum
+     content: '<h2>Port Elizabeth Museum</h2><p>Natural and cultural history museum in Port Elizabeth.</p>'
+    },
+    {
+      coordinates: [-33.0182, 27.9116], // East London Museum
+      content: '<h2>East London Museum</h2><p>Natural and cultural history museum in East London.</p>'
+    },
+    {
+      coordinates: [-34.0453, 18.3569], // Hout Bay
+      content: '<h2>Hout Bay</h2><p>Coastal area near Cape Town with historical significance.</p>'
+    },
+    {
+      coordinates: [-25.8584, 25.6486], // Mahikeng Museum
+      content: '<h2>Mahikeng Museum</h2><p>Historical museum in Mahikeng (Mafikeng).</p>'
+    },
+    {
+      coordinates: [-29.1110, 26.2169], // The Old Fort, Bloemfontein
+      content: '<h2>The Old Fort</h2><p>Historical site in Bloemfontein.</p>'
+    },
+    {
+      coordinates: [-33.9172, 18.4209], // Chavonnes Battery Museum
+      content: '<h2>Chavonnes Battery Museum</h2><p>Historical museum in Cape Town.</p>'
+    },
+    {
+      coordinates: [-33.9258, 18.4154], // Noon Gun
+      content: '<h2>Noon Gun</h2><p>Historic landmark in Cape Town.</p>'
+    },
+    {
+      coordinates: [-34.1924, 18.4305], // South African Naval Museum
+      content: '<h2>South African Naval Museum</h2><p>Naval history museum in Simons Town.</p>'
+    },
+    {
+      coordinates: [-34.5302, 20.0346], // Shipwreck Museum, Bredasdorp
+      content: '<h2>Shipwreck Museum</h2><p>Maritime museum in Bredasdorp.</p>'
+    },
+    {
+      coordinates: [-29.8619, 31.0306], // Port Natal Maritime Museum
+      content: '<h2>Port Natal Maritime Museum</h2><p>Maritime museum in Durban.</p>'
+    },
+    {
+      coordinates: [-32.7761, 26.6384], // Fort Beaufort Historical Museum
+      content: '<h2>Fort Beaufort Historical Museum</h2><p>Historical museum in Fort Beaufort.</p>'
+    },
+    {
+      coordinates: [-33.9356, 18.8622], // V.O.C. Kruithuis, Stellenbosch
+      content: '<h2>V.O.C. Kruithuis</h2><p>Historic powder magazine in Stellenbosch.</p>'
+    },
+    {
+      coordinates: [-33.9039, 18.4047], // Fort Wynyard
+      content: '<h2>Fort Wynyard</h2><p>Historic fortification in Cape Town.</p>'
+    },
+    {
+      coordinates: [-33.8271, 18.6343], // Nitida Cannon Station, Durbanville
+      content: '<h2>Nitida Cannon Station</h2><p>Historic cannon station in Durbanville.</p>'
+    },
+    ];
+
+    var customIcon = L.icon({
+    iconUrl: 'images/map marker.png',
+    iconSize: [48, 48],
+    iconAnchor: [32, 48]
+  });
+
+  $.each(markers, function(index, marker) {
+    L.marker(marker.coordinates, { icon: customIcon })
+      .addTo(map)
+      .bindPopup(marker.content);
+  });
+});
+</script>
+
+<script src="index.js"></script>
+</body>
+</html>
