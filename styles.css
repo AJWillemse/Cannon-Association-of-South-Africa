@@ -228,6 +228,7 @@ em {
     flex-wrap: wrap;
     margin: auto;
     margin-bottom: 8%;
+    margin-top: 5%;
 }
 
 .card {
@@ -621,8 +622,8 @@ em {
     }
     
     h2 {
-        font-size: 1.6rem;
-        margin-bottom: 3%;
+        font-size: 1.4rem;
+        margin-bottom: 1%;
     }
     
     .h2-caption {
@@ -682,7 +683,7 @@ em {
     }
     
     .link-footer {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
 
     .container-footer {
@@ -758,7 +759,7 @@ em {
     }
 
     .footer-logo {
-        width: 15%;
+        width: 20%;
     }
 
     .btn {
