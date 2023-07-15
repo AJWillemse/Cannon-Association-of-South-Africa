@@ -615,14 +615,14 @@ em {
     }
 
     h1 {
-        font-size: 2rem;
+        font-size: 1.6rem;
         margin-bottom: 8%;
         margin-top: 8%;
     }
     
     h2 {
-        font-size: 2rem;
-        margin-bottom: 5%;
+        font-size: 1.6rem;
+        margin-bottom: 3%;
     }
     
     .h2-caption {
@@ -638,16 +638,15 @@ em {
     }
     
     h3 {
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
     
     h4 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     
     .h4-left-aligned {
-        font-size: 1.3;
-        margin-bottom: 5%;
+        font-size: 1.2rem;
     }
     
     .h4-pdf {
@@ -659,11 +658,11 @@ em {
     }
     
     p {
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
     
     ul {
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
     
     em {
@@ -673,19 +672,21 @@ em {
     }
     
     .footer-text {
-        font-size: 1.2rem;
+        font-size: 1rem;
+        font-weight: bold;
     }
     
     .footer-text-tm {
-        font-size: 1.2rem;
+        font-size: 1rem;
+        font-weight: bold;
     }
     
     .link-footer {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 
     .container-footer {
-        margin-top: 8%;
+        margin-top: 12%;
     }
 
     .card {
